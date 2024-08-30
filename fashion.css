@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar:hover {
+    background-color: #333333;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6f00;
+}
+
+/* Page Title */
+.page-title {
+    margin-top: 90px;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #1c1c1c;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    color: #ff6f00;
+}
+
+.page-title p {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    background-color: #1c1c1c;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ff6f00;
+}
+
+.section p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+/* Cards/Grid Styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.card .price {
+    color: #ff6f00;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    padding: 0 20px;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    background-color: #ff6f00;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 0 0 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #ff8f00;
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #1c1c1c;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ff6f00;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6f00;
+}
+
+.footer-section .social a {
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social a:hover {
+    color: #ff6f00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #333333;
+}

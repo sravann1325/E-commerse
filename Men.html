@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Platform</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search for products">
+            <button type="submit">Search</button>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icon">
+            <a href="cart.html"><img src="images/add-to-cart.png" alt="Cart"></a>
+        </div>
+    </div>
+     <!-- Filter Section -->
+     <div class="filter-section">
+        <h2>Filter Products</h2>
+        <form>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="clothing">Clothing</option>
+                <option value="footwear">Footwear</option>
+                <option value="accessories">Accessories</option>
+            </select>
+
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" name="price-range" min="0" max="1000">
+            <span id="price-range-value">0 - 100000</span>
+
+            <label for="sort">Sort By:</label>
+            <select id="sort" name="sort">
+                <option value="popularity">Popularity</option>
+                <option value="newest">Newest</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+            </select>
+
+            <button type="submit">Apply Filters</button>
+        </form>
+    </div>
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="card">
+                <img src="images/menblazer1.avif" alt="Product 1">
+                <h1>Mens Blazer</h1>
+                <p class="price">12299</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/menblazer2.avif" alt="Product 2">
+                <h1>Mens Blazer</h1>
+                <p class="price">29999</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/menblazer3.avif" alt="Product 3">
+                <h1>Mens Blazer</h1>
+                <p class="price">39999</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/menshirt1.avif" alt="Product 2">
+                <h1>Mens shirt</h1>
+                <p class="price">999</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/menshirt2.avif" alt="Product 2">
+                <h1>Mens shirt</h1>
+                <p class="price">999</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/menshirt3.avif" alt="Product 2">
+                <h1>Mens shirt</h1>
+                <p class="price">699</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/menshirt4.avif" alt="Product 2">
+                <h1>Mens shirt</h1>
+                <p class="price">899</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/menshorts1.avif" alt="Product 2">
+                <h1>Mens short</h1>
+                <p class="price">999</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/mensshort2.avif" alt="Product 2">
+                <h1>mens short</h1>
+                <p class="price">299</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/mensjeans1.avif" alt="Product 2">
+                <h1>Men Blue jeans</h1>
+                <p class="price">1999</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/mensjeans2.avif" alt="Product 2">
+                <h1>Mens Grey jeans</h1>
+                <p class="price">$3999</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/mensjeans3.avif" alt="Product 2">
+                <h1>Mens Black jeans</h1>
+                <p class="price">2999</p>
+                <p>Some text about the product.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Sign up to stay updated on the latest offers and products.</p>
+        <div class="newsletter-box">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review-grid">
+            <div class="review-card">
+                <p>"Amazing quality and fast delivery. Highly recommend!"</p>
+                <span>- John Doe</span>
+            </div>
+            <div class="review-card">
+                <p>"Great products at great prices. Will shop again."</p>
+                <span>- Jane Smith</span>
+            </div>
+            <div class="review-card">
+                <p>"Fantastic customer service and easy returns process."</p>
+                <span>- Michael Lee</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci nec magna euismod laoreet.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Online Shopping Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
